@@ -1,0 +1,8 @@
+a="hello"  
+b="java"  #string op 
+print(a)  
+print(b)  
+print(a+b)  
+print(a*2)  
+print(a.upper())  
+print(a.lower())
