@@ -1,0 +1,7 @@
+student={"name":"swe","age":18 "course":"Aiml"} 
+print(student) 
+student2=dict(name="rebecca",age=18 ,course="aiml")  
+print(student2)  
+print(student["name"] 
+print(student.get("name")) 
+print(student.get("gender"))
