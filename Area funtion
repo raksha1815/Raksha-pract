@@ -1,0 +1,8 @@
+def sqr(a):  
+    return(a*a) 
+print("Area of square:")  
+print(sqr(5)) 
+def rec(b,c): 
+    return(b*c) 
+print("Area of rectangle:") 
+print(rec(10,10))
