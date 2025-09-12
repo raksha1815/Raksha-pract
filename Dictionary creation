@@ -1,0 +1,4 @@
+student={"name":"swe","age":18,"course" :"Aiml"} 
+print(student) 
+student2=dict(name="swe",age=18,course ="aiml") 
+print(student2)
