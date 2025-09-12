@@ -1,0 +1,23 @@
+bal=1000  
+while True:  
+    print("1.balance check:")  
+    print("2.withdaw: ")  
+    print("3.deposit:")  
+    print("4.exit:")  
+    break  
+    opt=int(input("enter your option:"))  
+        if opt==1: 
+            print("balance amount:",bal) 
+        elif opt==2:
+            
+            amnt=int(input("amount to be withdrawn:"))  
+            bal=bal-amnt
+            print("amount withdrawn:",amnt)  
+        elif opt==3:  
+            amnt=int(input("amount to deposit:"))  
+            bal=bal+amnt  
+            print("amount deposited:",amnt)  
+        elif opt==4:  
+            print("exitingggg!!!!") 
+        else:  
+            print("invalid choice")
