@@ -1,0 +1,53 @@
+import tkinter as tk
+from tkinter import ttk
+
+def submit():
+    model_name = entry_model.get()
+    manufacturer = combo_maker.get()
+    features = text_features.get("1.0", tk.END).strip()
+    transmission = trans_var.get()
+
+    print("Car Model Submitted:")
+    print(f"Model Name: {model_name}")
+    print(f"Manufacturer: {manufacturer}")
+    print(f"Features: {features}")
+    print(f"Transmission: {transmission}")
+
+win = tk.Tk()
+win.title("Car Model Showcase")
+win.geometry("320x400")
+
+# Label and Entry
+tk.Label(win, text="Car Model Name:").pack(pady=5)
+entry_model = tk.Entry(win, width=30)
+entry_model.pack(pady=5)
+
+# Label and ComboBox
+tk.Label(win, text="Select Manufacturer:").pack(pady=5)
+combo_maker = ttk.Combobox(win, values=["Ferrari", "Lamborghini", "Tesla", "BMW", "Mercedes", "Toyota"], width=27)
+combo_maker.pack(pady=5)
+combo_maker.set("Choose Manufacturer")
+
+# Label and Scrollable Text
+tk.Label(win, text="Model Features / Highlights:").pack(pady=5)
+frame_features = tk.Frame(win)
+frame_features.pack(pady=5)
+scrollbar = tk.Scrollbar(frame_features)
+scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+text_features = tk.Text(frame_features, height=5, width=30, yscrollcommand=scrollbar.set)
+text_features.pack(side=tk.LEFT)
+scrollbar.config(command=text_features.yview)
+
+# Label and RadioButtons
+tk.Label(win, text="Transmission Type:").pack(pady=5)
+trans_var = tk.StringVar()
+trans_var.set("None")  # Default value
+
+tk.Radiobutton(win, text="Manual", variable=trans_var, value="Manual", anchor="w", width=20).pack()
+tk.Radiobutton(win, text="Automatic", variable=trans_var, value="Automatic", anchor="w", width=20).pack()
+tk.Radiobutton(win, text="Semi-Automatic", variable=trans_var, value="Semi-Automatic", anchor="w", width=20).pack()
+
+# Submit Button
+tk.Button(win, text="Submit", command=submit).pack(pady=15)
+
+win.mainloop()
