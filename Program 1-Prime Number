@@ -1,0 +1,141 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOt3Jl4S0gGPXCIWr846VvI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/raksha1815/Raksha-pract/blob/main/Program%201-Prime%20Number\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Check whether a given number is prime or non-prime\n",
+        "n=int(input(\"Enter a Number:\"))\n",
+        "c=0\n",
+        "for i in range(1,n+1):\n",
+        "    if n%i==0:\n",
+        "        c+=1\n",
+        "if c==2:\n",
+        "    print(n,\"It is a Prime Number\")\n",
+        "else:\n",
+        "    print(n,\"It is not a Prime Number\")\n",
+        "# Prime numbers within an interval using for loop\n",
+        "for i in range(1,101):\n",
+        "    c=0\n",
+        "    for j in range(1,i+1):\n",
+        "        if i % j == 0:\n",
+        "            c+=1\n",
+        "    if c==2:\n",
+        "        print(i)\n",
+        "#Prime numbers within an interval using while loop\n",
+        "i=1\n",
+        "while i<100:\n",
+        "    i+=1\n",
+        "    c=0\n",
+        "    for j in range(1,i+1):\n",
+        "        if i % j == 0:\n",
+        "          c+=1\n",
+        "    if c==2:\n",
+        "        print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xBzhskZjSE0l",
+        "outputId": "61e013a0-f0ef-4b06-97a0-53f6162ff1d0",
+        "collapsed": true
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a Number:345\n",
+            "345 It is not a Prime Number\n",
+            "2\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "11\n",
+            "13\n",
+            "17\n",
+            "19\n",
+            "23\n",
+            "29\n",
+            "31\n",
+            "37\n",
+            "41\n",
+            "43\n",
+            "47\n",
+            "53\n",
+            "59\n",
+            "61\n",
+            "67\n",
+            "71\n",
+            "73\n",
+            "79\n",
+            "83\n",
+            "89\n",
+            "97\n",
+            "2\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "11\n",
+            "13\n",
+            "17\n",
+            "19\n",
+            "23\n",
+            "29\n",
+            "31\n",
+            "37\n",
+            "41\n",
+            "43\n",
+            "47\n",
+            "53\n",
+            "59\n",
+            "61\n",
+            "67\n",
+            "71\n",
+            "73\n",
+            "79\n",
+            "83\n",
+            "89\n",
+            "97\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "kEBEbUKGuaNv"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
