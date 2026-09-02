@@ -1,0 +1,29 @@
+CODING 1 (CREATING A TUPLE):
+a=(4,5,6,7,8,9)
+print(a)
+CODING 2 (TO CHANGE ELEMENT IN TUPLE):
+a=(4,5,6,7)
+a=a[:1]+(9,)+a[2:]
+print(a)
+CODING 3 (SWAPPING OF TWO NUMBERS):
+x=7
+y=8
+x,y=y,x
+print(x,y)
+
+CODING 4 (LIST OF TUPLES SORTING):
+student=[("Ram",20),("Karthik",18),("Arjun",19)]
+print(student)
+sort=sorted(student,key=lambda x:x[1])
+print(sort)
+sort1=sorted(student,key=lambda x:x[0])
+print(sort1)
+CODING 6 (COUNTING THE NO.OF ELEMENTS IN THE TUPLE):
+t=(1,2,3,4,5,6,7,8,2,2)
+c=t.count(2)
+print(c)
+CODING 7 (LOOPING IN TUPLE):
+sports=("Football","Cricket","Volleyball","Throwball")
+for i in sports:
+ print(i)
+for i in range(len(sports)):
