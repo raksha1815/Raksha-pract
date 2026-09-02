@@ -1,0 +1,35 @@
+CODING 1 (CREATING A LIST):
+numbers=[2,4,6,8,10]
+colors=["Red","blue","pink","yellow","black"]
+combined_list=[109,80.9,"Ashifa",True]
+empty_list=[]
+print(numbers,colors,combined_list,empty_list)
+CODING 2 (ACCESSING LIST ELEMENTS):
+colors=["Red","blue","pink","yellow","black"]
+print(colors[0])
+print(colors[-5])
+print(colors[4])
+print(colors[-1])
+CODING 3 (TO MODIFY A LIST):
+colors=["Red","blue","pink","yellow","black"]
+colors[1]="Lavender"
+colors[2]="Green"
+print(colors)
+CODING 4 (COMMON LIST OPERATIONS - 01):
+colors=["Red","blue","pink","yellow","black"]
+colors.append("White")
+colors.insert(1,"Orange")
+print(colors)
+CODING 5 (COMMON LIST OPERATIONS - 02):
+colors=["Red","blue","pink","yellow","black"]
+colors.pop()
+print(colors)
+CODING 6 (COMMON LIST OPERATION – 03):
+colors=["Red","blue","pink","yellow","black"]
+colors.remove("Red")
+print(colors)
+CODING 7 (COMMON LIST OPERATION – 04):
+colors=["Red","blue","pink","yellow","black"]
+combined_list=[109,80.9,"Ashifa",True]
+print(len(colors))
+print(len(combined_list))
